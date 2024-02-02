@@ -1,17 +1,5 @@
 <template>
-    <div class="flex h-screen flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
-            class="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
-          />
-          <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Request New Password
-          </h2>
-        </div>
-
-        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <GuestLayout title="Request new password">
           <form class="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" class="block text-sm font-medium leading-6 text-gray-900">
@@ -48,11 +36,12 @@
               </button>
             </div>
           </form>
-        </div>
-      </div>
+    </GuestLayout>
 </template>
     
 <script setup>
+import GuestLayout from '../components/GuestLayout.vue';
+
     {
         name: "request-password"
     }
